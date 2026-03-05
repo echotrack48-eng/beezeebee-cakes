@@ -1,86 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Beezeebee Cake Designs</title>
+<title>Beezeebee Cakes Menu | Luxury Cake Designs</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
 margin:0;
-font-family:'Inter',sans-serif;
-background:#fffaf5;
+font-family:'Inter', sans-serif;
+background:#f4f1ec;
 color:#222;
+padding-bottom:140px;
 }
+
+/* HEADER */
 
 header{
 background:#2c1b12;
-color:white;
 padding:20px;
 text-align:center;
-font-family:'Playfair Display',serif;
+color:#f5d7a1;
+font-family:'Playfair Display', serif;
+font-size:24px;
 }
 
-header a{
-color:#d4af37;
-text-decoration:none;
-font-size:14px;
-display:inline-block;
-margin-top:8px;
-}
+/* PAGE TITLE */
 
-h2{
-font-family:'Playfair Display',serif;
+.page-title{
 text-align:center;
-margin-top:60px;
-font-size:34px;
+padding:60px 20px 30px;
+font-family:'Playfair Display', serif;
+font-size:42px;
 }
 
-.grid{
+/* GRID */
+
+.menu-grid{
 max-width:1100px;
-margin:40px auto;
+margin:auto;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-padding:0 20px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+padding:20px;
 }
 
-.card{
+/* CARD */
+
+.menu-card{
 background:white;
-border-radius:12px;
+border-radius:16px;
 overflow:hidden;
 box-shadow:0 8px 20px rgba(0,0,0,0.08);
-transition:0.3s;
+transition:0.35s;
 }
 
-.card:hover{
-transform:translateY(-6px);
-box-shadow:0 12px 25px rgba(0,0,0,0.15);
+.menu-card:hover{
+transform:translateY(-10px);
+box-shadow:0 18px 40px rgba(0,0,0,0.18);
 }
 
-.card img{
+/* IMAGE */
+
+.menu-card img{
 width:100%;
-height:220px;
+height:250px;
 object-fit:cover;
 }
 
-.card h3{
+/* TITLE */
+
+.menu-card h3{
+padding:20px;
 text-align:center;
-padding:15px;
 font-weight:500;
+font-size:20px;
 }
+
+/* FOOTER */
 
 footer{
 background:#2c1b12;
 color:white;
 text-align:center;
-padding:40px;
+padding:40px 20px;
 margin-top:80px;
 }
+
+/* WHATSAPP BUTTON */
 
 .whatsapp{
 position:fixed;
@@ -88,11 +100,16 @@ bottom:25px;
 right:25px;
 background:#25D366;
 color:white;
-padding:15px 20px;
-border-radius:40px;
+padding:16px 24px;
+border-radius:50px;
 text-decoration:none;
-font-weight:bold;
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
+font-weight:600;
+box-shadow:0 12px 25px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.08);
 }
 
 </style>
@@ -101,83 +118,41 @@ box-shadow:0 10px 25px rgba(0,0,0,0.25);
 <body>
 
 <header>
-<h1>Beezeebee Cake Designs</h1>
-<a href="index.html">← Back to Home</a>
+Beezeebee Cakes & Events
 </header>
 
-<h2>Signature Cake Designs</h2>
+<h1 class="page-title">Kids Cake Collection</h1>
 
-<div class="grid">
+<div class="menu-grid">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d">
-<h3>Elegant Wedding Cake</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e">
-<h3>Luxury Floral Cake</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62">
-<h3>Gold Celebration Cake</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1586788680434-30d324d5fbb7">
-<h3>Classic Birthday Cake</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1559622214-f8a9850965bb">
-<h3>Anniversary Cake</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729">
-<h3>Modern Minimal Cake</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1623428454614-abafc3c6dcb7">
-<h3>Buttercream Art Cake</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
-<h3>Chocolate Luxury Cake</h3>
-</div>
-
-</div>
-
-<h2>Kids Cake Collection</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1599785209707-28d7bb2a3d0e">
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
 <h3>Princess Cake</h3>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1603079841644-7b0b8b1c7c6a">
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62">
 <h3>Superhero Cake</h3>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1562440499-64c9a111f713">
-<h3>Cartoon Character Cake</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75">
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e">
 <h3>Rainbow Kids Cake</h3>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1621303837387-6d7d6b9d4f8e">
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1542826438-8b0f6f2f4c54">
 <h3>Fun Birthday Cake</h3>
+</div>
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729">
+<h3>Buttercream Art Cake</h3>
+</div>
+
+<div class="menu-card">
+<img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d">
+<h3>Chocolate Luxury Cake</h3>
 </div>
 
 </div>
@@ -186,7 +161,11 @@ box-shadow:0 10px 25px rgba(0,0,0,0.25);
 © 2026 Beezeebee Cakes & Events
 </footer>
 
-<a class="whatsapp" href="https://wa.me/2347035762582?text=Hello%20Beezeebee%20Cakes,%20I%20would%20like%20to%20order%20a%20cake.">WhatsApp</a>
+<a href="https://wa.me/2347035762582?text=Hello%20Beezeebee%20Cakes,%20I'd%20like%20to%20place%20an%20order."
+target="_blank"
+class="whatsapp">
+WhatsApp
+</a>
 
 </body>
 </html>
