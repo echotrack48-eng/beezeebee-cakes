@@ -1,159 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beezeebee Cakes Menu | Luxury Cakes in Asaba</title>
-<meta name="description" content="Explore premium custom cakes from Beezeebee Cakes. Kids, wedding, and specialty cakes designed for your special moments.">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Beezeebee Cakes Menu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin:0;
-  font-family:'Inter', sans-serif;
-  background:#fffaf5;
-  color:#222;
+
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:#fffaf5;
+color:#222;
 }
 
-/* Header */
-header {
-  backdrop-filter: blur(12px);
-  background: rgba(44,27,18,0.9);
-  padding:15px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:fixed;
-  width:100%;
-  top:0;
-  left:0;
-  z-index:1000;
-}
-header h1 { font-family:'Playfair Display', serif; color:#f5d7a1; font-size:22px; margin:0; }
-nav a { color:white; text-decoration:none; font-weight:500; margin-left:20px; }
-nav a:hover { color:#d4af37; }
-
-/* Page Title */
-.page-title { margin-top:80px; text-align:center; font-family:'Playfair Display', serif; font-size:36px; margin-bottom:40px; }
-
-/* Section Titles */
-.section-title { font-family:'Playfair Display', serif; font-size:28px; margin:40px 0 20px; text-align:center; }
-
-/* Menu Grid */
-.menu-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-  gap:20px;
-  max-width:1000px;
-  margin:0 auto 60px;
-  padding:0 20px;
-}
-.menu-card {
-  background:white;
-  border-radius:10px;
-  overflow:hidden;
-  box-shadow:0 6px 15px rgba(0,0,0,0.1);
-  text-align:center;
-}
-.menu-card img { width:100%; display:block; height:250px; object-fit:cover; }
-.menu-card h3 { padding:15px; font-size:18px; margin:0; }
-
-/* WhatsApp button */
-.whatsapp {
-  position:fixed;
-  bottom:25px;
-  right:25px;
-  background:#25D366;
-  color:white;
-  padding:16px 22px;
-  border-radius:50px;
-  font-weight:bold;
-  text-decoration:none;
-  box-shadow:0 10px 25px rgba(0,0,0,0.25);
-  z-index:1000;
+header{
+background:#2c1b12;
+padding:18px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-/* Footer */
-footer { background:#2c1b12; color:white; padding:40px 20px; text-align:center; font-size:14px; }
+header h1{
+color:#f5d7a1;
+font-family:'Playfair Display',serif;
+margin:0;
+font-size:22px;
+}
 
-/* Responsive */
-@media(max-width:768px){ .page-title{font-size:28px;} .section-title{font-size:22px;} }
+header a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.page-title{
+text-align:center;
+font-family:'Playfair Display',serif;
+font-size:42px;
+margin-top:70px;
+}
+
+.section-title{
+text-align:center;
+margin-top:70px;
+font-family:'Playfair Display',serif;
+font-size:28px;
+}
+
+.menu-grid{
+max-width:1100px;
+margin:40px auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:0 20px;
+}
+
+.menu-card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.menu-card:hover{
+transform:translateY(-6px);
+}
+
+.menu-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
+}
+
+.menu-card h3{
+padding:18px;
+margin:0;
+font-size:18px;
+text-align:center;
+}
+
+footer{
+background:#2c1b12;
+color:white;
+padding:40px;
+text-align:center;
+margin-top:80px;
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Beezeebee Cakes</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="tel:07035762582">Call</a>
-  </nav>
+
+<h1>Beezeebee Cakes</h1>
+
+<a href="index.html">Back Home</a>
+
 </header>
+
 
 <h1 class="page-title">Our Cake Collections</h1>
 
-<!-- Kids Cakes Section -->
+
+<!-- Kids Cakes -->
+
 <h2 class="section-title">Kids Cake Collection</h2>
+
 <div class="menu-grid">
-  <div class="menu-card">
-    <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=800" alt="Fun Birthday Cake">
-    <h3>Fun Birthday Cake</h3>
-  </div>
-  <div class="menu-card">
-    <img src="https://images.unsplash.com/photo-1589987605476-2a1a0a1e0e7c?w=800" alt="Rainbow Kids Cake">
-    <h3>Rainbow Kids Cake</h3>
-  </div>
-  <div class="menu-card">
-    <img src="https://images.unsplash.com/photo-1565958011701-44d4f19c46c2?w=800" alt="Superhero Cake">
-    <h3>Superhero Cake</h3>
-  </div>
-  <div class="menu-card">
-    <img src="https://images.unsplash.com/photo-1603046891721-5e2b9e62f7d2?w=800" alt="Princess Cake">
-    <h3>Princess Cake</h3>
-  </div>
+
+<div class="menu-card">
+<img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg">
+<h3>Fun Birthday Cake</h3>
 </div>
 
-<!-- Wedding Cakes Section -->
+<div class="menu-card">
+<img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg">
+<h3>Rainbow Kids Cake</h3>
+</div>
+
+<div class="menu-card">
+<img src="https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg">
+<h3>Superhero Cake</h3>
+</div>
+
+<div class="menu-card">
+<img src="https://images.pexels.com/photos/913136/pexels-photo-913136.jpeg">
+<h3>Princess Cake</h3>
+</div>
+
+</div>
+
+
+
+<!-- Wedding Cakes -->
+
 <h2 class="section-title">Wedding Cake Collection</h2>
+
 <div class="menu-grid">
-  <div class="menu-card">
-    <img src="https://images.unsplash.com/photo-1599785209707-0181cda5b1db?w=800" alt="Classic Wedding Cake">
-    <h3>Classic Wedding Cake</h3>
-  </div>
-  <div class="menu-card">
-    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" alt="Tiered Luxury Cake">
-    <h3>Tiered Luxury Cake</h3>
-  </div>
-  <div class="menu-card">
-    <img src="https://images.unsplash.com/photo-1617196039182-37d2c7c6d958?w=800" alt="Floral Wedding Cake">
-    <h3>Floral Wedding Cake</h3>
-  </div>
+
+<div class="menu-card">
+<img src="https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg">
+<h3>Classic Wedding Cake</h3>
 </div>
 
-<!-- Specialty Cakes Section -->
+<div class="menu-card">
+<img src="https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg">
+<h3>Luxury Tier Cake</h3>
+</div>
+
+<div class="menu-card">
+<img src="https://images.pexels.com/photos/1721933/pexels-photo-1721933.jpeg">
+<h3>Floral Wedding Cake</h3>
+</div>
+
+</div>
+
+
+
+<!-- Specialty Cakes -->
+
 <h2 class="section-title">Specialty Cakes</h2>
+
 <div class="menu-grid">
-  <div class="menu-card">
-    <img src="https://images.unsplash.com/photo-1606312619385-3d877c7cf0c1?w=800" alt="Chocolate Luxury Cake">
-    <h3>Chocolate Luxury Cake</h3>
-  </div>
-  <div class="menu-card">
-    <img src="https://images.unsplash.com/photo-1607314869851-208a28b1f15d?w=800" alt="Buttercream Art Cake">
-    <h3>Buttercream Art Cake</h3>
-  </div>
-  <div class="menu-card">
-    <img src="https://images.unsplash.com/photo-1599785209310-3f2b7d7f1b5a?w=800" alt="Donut Cake Stack">
-    <h3>Donut Cake Stack</h3>
-  </div>
+
+<div class="menu-card">
+<img src="https://images.pexels.com/photos/1721931/pexels-photo-1721931.jpeg">
+<h3>Chocolate Luxury Cake</h3>
 </div>
 
-<!-- WhatsApp Button -->
-<a href="https://wa.me/2347035762582?text=Hello%20Beezeebee%20Cakes,%20I’d%20like%20to%20place%20an%20order." target="_blank" class="whatsapp">WhatsApp</a>
+<div class="menu-card">
+<img src="https://images.pexels.com/photos/132694/pexels-photo-132694.jpeg">
+<h3>Buttercream Art Cake</h3>
+</div>
+
+<div class="menu-card">
+<img src="https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg">
+<h3>Celebration Cake</h3>
+</div>
+
+</div>
+
+
 
 <footer>
-  © 2026 Beezeebee Cakes & Events. All Rights Reserved.
+
+© 2026 Beezeebee Cakes & Events
+
 </footer>
 
 </body>
