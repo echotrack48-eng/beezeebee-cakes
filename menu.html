@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,6 +18,8 @@ background:#fffaf5;
 color:#222;
 }
 
+/* HEADER */
+
 header{
 background:#2c1b12;
 padding:18px 30px;
@@ -30,28 +32,30 @@ header h1{
 color:#f5d7a1;
 font-family:'Playfair Display',serif;
 margin:0;
-font-size:22px;
 }
 
 header a{
 color:white;
 text-decoration:none;
-font-weight:500;
 }
+
+/* TITLES */
 
 .page-title{
 text-align:center;
 font-family:'Playfair Display',serif;
-font-size:42px;
-margin-top:70px;
+font-size:40px;
+margin-top:60px;
 }
 
 .section-title{
 text-align:center;
-margin-top:70px;
 font-family:'Playfair Display',serif;
+margin-top:70px;
 font-size:28px;
 }
+
+/* GRID */
 
 .menu-grid{
 max-width:1100px;
@@ -66,8 +70,8 @@ padding:0 20px;
 background:white;
 border-radius:12px;
 overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:.3s;
 }
 
 .menu-card:hover{
@@ -78,21 +82,63 @@ transform:translateY(-6px);
 width:100%;
 height:220px;
 object-fit:cover;
-display:block;
+cursor:pointer;
 }
 
 .menu-card h3{
-padding:18px;
-margin:0;
-font-size:18px;
 text-align:center;
+margin:15px 0;
 }
+
+.order-btn{
+display:block;
+text-align:center;
+background:#25D366;
+color:white;
+padding:10px;
+margin:0 15px 20px;
+border-radius:6px;
+text-decoration:none;
+font-weight:500;
+}
+
+/* IMAGE MODAL */
+
+.modal{
+display:none;
+position:fixed;
+z-index:1000;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.85);
+}
+
+.modal img{
+display:block;
+margin:auto;
+max-width:90%;
+max-height:80%;
+margin-top:5%;
+}
+
+.close{
+position:absolute;
+top:30px;
+right:40px;
+color:white;
+font-size:40px;
+cursor:pointer;
+}
+
+/* FOOTER */
 
 footer{
 background:#2c1b12;
 color:white;
-padding:40px;
 text-align:center;
+padding:40px;
 margin-top:80px;
 }
 
@@ -113,84 +159,81 @@ margin-top:80px;
 <h1 class="page-title">Our Cake Collections</h1>
 
 
-<!-- Kids Cakes -->
+<!-- KIDS CAKES -->
 
-<h2 class="section-title">Kids Cake Collection</h2>
+<h2 class="section-title">Kids Cakes</h2>
 
 <div class="menu-grid">
 
 <div class="menu-card">
-<img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg">
+<img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg" onclick="openModal(this.src)">
 <h3>Fun Birthday Cake</h3>
+<a class="order-btn" href="https://wa.me/2347035762582?text=I%20want%20to%20order%20a%20Fun%20Birthday%20Cake">Order on WhatsApp</a>
 </div>
 
 <div class="menu-card">
-<img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg">
-<h3>Rainbow Kids Cake</h3>
-</div>
-
-<div class="menu-card">
-<img src="https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg">
-<h3>Superhero Cake</h3>
-</div>
-
-<div class="menu-card">
-<img src="https://images.pexels.com/photos/913136/pexels-photo-913136.jpeg">
+<img src="https://images.pexels.com/photos/913136/pexels-photo-913136.jpeg" onclick="openModal(this.src)">
 <h3>Princess Cake</h3>
+<a class="order-btn" href="https://wa.me/2347035762582?text=I%20want%20to%20order%20a%20Princess%20Cake">Order on WhatsApp</a>
+</div>
+
+<div class="menu-card">
+<img src="https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg" onclick="openModal(this.src)">
+<h3>Superhero Cake</h3>
+<a class="order-btn" href="https://wa.me/2347035762582?text=I%20want%20to%20order%20a%20Superhero%20Cake">Order on WhatsApp</a>
 </div>
 
 </div>
 
 
+<!-- WEDDING -->
 
-<!-- Wedding Cakes -->
-
-<h2 class="section-title">Wedding Cake Collection</h2>
+<h2 class="section-title">Wedding Cakes</h2>
 
 <div class="menu-grid">
 
 <div class="menu-card">
-<img src="https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg">
+<img src="https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg" onclick="openModal(this.src)">
 <h3>Classic Wedding Cake</h3>
+<a class="order-btn" href="https://wa.me/2347035762582?text=I%20want%20to%20order%20a%20Wedding%20Cake">Order on WhatsApp</a>
 </div>
 
 <div class="menu-card">
-<img src="https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg">
+<img src="https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg" onclick="openModal(this.src)">
 <h3>Luxury Tier Cake</h3>
-</div>
-
-<div class="menu-card">
-<img src="https://images.pexels.com/photos/1721933/pexels-photo-1721933.jpeg">
-<h3>Floral Wedding Cake</h3>
+<a class="order-btn" href="https://wa.me/2347035762582?text=I%20want%20to%20order%20a%20Luxury%20Tier%20Cake">Order on WhatsApp</a>
 </div>
 
 </div>
 
 
-
-<!-- Specialty Cakes -->
+<!-- SPECIALTY -->
 
 <h2 class="section-title">Specialty Cakes</h2>
 
 <div class="menu-grid">
 
 <div class="menu-card">
-<img src="https://images.pexels.com/photos/1721931/pexels-photo-1721931.jpeg">
-<h3>Chocolate Luxury Cake</h3>
-</div>
-
-<div class="menu-card">
-<img src="https://images.pexels.com/photos/132694/pexels-photo-132694.jpeg">
+<img src="https://images.pexels.com/photos/132694/pexels-photo-132694.jpeg" onclick="openModal(this.src)">
 <h3>Buttercream Art Cake</h3>
+<a class="order-btn" href="https://wa.me/2347035762582?text=I%20want%20to%20order%20a%20Buttercream%20Cake">Order on WhatsApp</a>
 </div>
 
 <div class="menu-card">
-<img src="https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg">
+<img src="https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg" onclick="openModal(this.src)">
 <h3>Celebration Cake</h3>
+<a class="order-btn" href="https://wa.me/2347035762582?text=I%20want%20to%20order%20a%20Celebration%20Cake">Order on WhatsApp</a>
 </div>
 
 </div>
 
+
+<!-- IMAGE MODAL -->
+
+<div id="imageModal" class="modal">
+<span class="close" onclick="closeModal()">&times;</span>
+<img id="modalImg">
+</div>
 
 
 <footer>
@@ -198,6 +241,25 @@ margin-top:80px;
 © 2026 Beezeebee Cakes & Events
 
 </footer>
+
+
+<script>
+
+function openModal(src){
+
+document.getElementById("imageModal").style.display="block"
+document.getElementById("modalImg").src=src
+
+}
+
+function closeModal(){
+
+document.getElementById("imageModal").style.display="none"
+
+}
+
+</script>
+
 
 </body>
 </html>
